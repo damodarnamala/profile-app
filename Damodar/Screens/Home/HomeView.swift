@@ -21,22 +21,21 @@ struct HomeView: View {
     }
     
     var body: some View {
-        NavigationStack {
+        NavigationView {
             VStack() {
                 HomeHeaderView(intro: intro)
                 ScrollView {
-                    VStack {
-                        HStack {
-                            MessageBubble(isIncoming: true) {
-                                TextCaption(text: intro?.aboutMe ?? "")
-                                    .multilineTextAlignment(.center)
-                                    .padding(.horizontal)
-                            }
+                    HStack {
+                        MessageBubble(isIncoming: true) {
+                            TextCaption(text: intro?.aboutMe ?? "")
+                                .multilineTextAlignment(.center)
+                                .padding(.horizontal)
                         }
-                        HomeQuickView()
                     }
+                    HomeQuickView()
                 }
             }
+            .navigationTitle(intro?.name ?? "")
             .frame(maxHeight: .infinity, alignment: .topLeading)
             .onAppear {
                 viewModel.getIntro()

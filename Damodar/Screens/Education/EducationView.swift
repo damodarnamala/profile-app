@@ -16,34 +16,33 @@ struct EducationView: View {
     }
     
     var body: some View {
-        VStack {
-            Image(systemName: "graduationcap")
-                .font(.system(size: 64))
-                .padding(.bottom)
-            
+        NavigationView {
             VStack(alignment: .leading) {
-                
-                intro.map { introItem in
-                    VStack(alignment: .center) {
-                        TextHeadline(text: introItem.education.title)
-                            .padding(.bottom)
-                        ForEach(introItem.education.all, id: \.self) { item in
-                            Text(item)
-                                .font(.system(size: 12, weight: .light))
-                                .frame(maxWidth: .infinity, alignment: .leading)
-                                .padding(.vertical, 1)
+                Image(systemName: "graduationcap")
+                    .font(.system(size: 64))
+                    .padding(.bottom)
+                VStack(alignment: .leading) {
+                    intro.map { introItem in
+                        VStack(alignment: .center) {
+                            ForEach(introItem.education.all, id: \.self) { item in
+                                Text(item)
+                                    .font(.system(size: 12, weight: .light))
+                                    .frame(maxWidth: .infinity, alignment: .leading)
+                                    .padding(.vertical, 1)
+                            }
                         }
+                        .navigationTitle(introItem.education.title )
                     }
                 }
             }
-        }
-        .frame(maxHeight: .infinity, alignment: .top)
-        .padding()
-        .onAppear {
-            viewModel.getIntro()
-        }
-        .onReceive(viewModel.introSubject) { intro in
-            self.intro = intro
+            .frame(maxHeight: .infinity, alignment: .top)
+            .padding()
+            .onAppear {
+                viewModel.getIntro()
+            }
+            .onReceive(viewModel.introSubject) { intro in
+                self.intro = intro
+            }
         }
     }
 }
