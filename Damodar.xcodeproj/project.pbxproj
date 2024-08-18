@@ -1,0 +1,743 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5A25FE612C72733E0091BE38 /* Intro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A25FE592C72733E0091BE38 /* Intro.swift */; };
+		5A25FE622C72733E0091BE38 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A25FE5B2C72733E0091BE38 /* Home.swift */; };
+		5A25FE632C72733E0091BE38 /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A25FE5C2C72733E0091BE38 /* HomeHeaderView.swift */; };
+		5A25FE642C72733E0091BE38 /* HomeQuickView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A25FE5D2C72733E0091BE38 /* HomeQuickView.swift */; };
+		5A25FE652C72733E0091BE38 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A25FE5E2C72733E0091BE38 /* HomeView.swift */; };
+		5A25FE662C72733E0091BE38 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A25FE5F2C72733E0091BE38 /* HomeViewModel.swift */; };
+		5A25FE692C7278D00091BE38 /* Experience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A25FE682C7278D00091BE38 /* Experience.swift */; };
+		5A25FE6B2C7278DE0091BE38 /* ExperienceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A25FE6A2C7278DE0091BE38 /* ExperienceViewModel.swift */; };
+		5A25FE6E2C72790F0091BE38 /* EducationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A25FE6D2C72790F0091BE38 /* EducationView.swift */; };
+		5A25FE702C727B300091BE38 /* Education.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A25FE6F2C727B300091BE38 /* Education.swift */; };
+		5A25FE722C727B4A0091BE38 /* EducationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A25FE712C727B4A0091BE38 /* EducationViewModel.swift */; };
+		5AB17F142C719361005B616D /* DamodarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB17F132C719361005B616D /* DamodarApp.swift */; };
+		5AB17F182C719362005B616D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AB17F172C719362005B616D /* Assets.xcassets */; };
+		5AB17F1B2C719362005B616D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AB17F1A2C719362005B616D /* Preview Assets.xcassets */; };
+		5AB17F252C719362005B616D /* DamodarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB17F242C719362005B616D /* DamodarTests.swift */; };
+		5AB17F2F2C719362005B616D /* DamodarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB17F2E2C719362005B616D /* DamodarUITests.swift */; };
+		5AB17F312C719362005B616D /* DamodarUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB17F302C719362005B616D /* DamodarUITestsLaunchTests.swift */; };
+		5AB17F422C71952A005B616D /* intro.json in Resources */ = {isa = PBXBuildFile; fileRef = 5AB17F412C71952A005B616D /* intro.json */; };
+		5AB17F472C719793005B616D /* JSONHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB17F462C719793005B616D /* JSONHelper.swift */; };
+		5AB17F4D2C71A047005B616D /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB17F4C2C71A047005B616D /* Text.swift */; };
+		5AB17F512C725A10005B616D /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB17F502C725A10005B616D /* MainTabView.swift */; };
+		5AB17F542C726CD7005B616D /* MainTabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB17F532C726CD7005B616D /* MainTabbar.swift */; };
+		5AB17F562C72716D005B616D /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB17F552C72716D005B616D /* MainViewModel.swift */; };
+		5AB17F582C72718B005B616D /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB17F572C72718B005B616D /* Errors.swift */; };
+		5AB17F5C2C727244005B616D /* ExperienceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB17F5B2C727244005B616D /* ExperienceView.swift */; };
+		5AB17F5E2C7272AC005B616D /* SizeConstangs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB17F5D2C7272AC005B616D /* SizeConstangs.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5AB17F212C719362005B616D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5AB17F082C719361005B616D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5AB17F0F2C719361005B616D;
+			remoteInfo = Damodar;
+		};
+		5AB17F2B2C719362005B616D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5AB17F082C719361005B616D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5AB17F0F2C719361005B616D;
+			remoteInfo = Damodar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5A25FE592C72733E0091BE38 /* Intro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Intro.swift; sourceTree = "<group>"; };
+		5A25FE5B2C72733E0091BE38 /* Home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		5A25FE5C2C72733E0091BE38 /* HomeHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
+		5A25FE5D2C72733E0091BE38 /* HomeQuickView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeQuickView.swift; sourceTree = "<group>"; };
+		5A25FE5E2C72733E0091BE38 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		5A25FE5F2C72733E0091BE38 /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		5A25FE682C7278D00091BE38 /* Experience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Experience.swift; sourceTree = "<group>"; };
+		5A25FE6A2C7278DE0091BE38 /* ExperienceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceViewModel.swift; sourceTree = "<group>"; };
+		5A25FE6D2C72790F0091BE38 /* EducationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationView.swift; sourceTree = "<group>"; };
+		5A25FE6F2C727B300091BE38 /* Education.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Education.swift; sourceTree = "<group>"; };
+		5A25FE712C727B4A0091BE38 /* EducationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationViewModel.swift; sourceTree = "<group>"; };
+		5AB17F102C719361005B616D /* Damodar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Damodar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AB17F132C719361005B616D /* DamodarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DamodarApp.swift; sourceTree = "<group>"; };
+		5AB17F172C719362005B616D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5AB17F1A2C719362005B616D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5AB17F202C719362005B616D /* DamodarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DamodarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AB17F242C719362005B616D /* DamodarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DamodarTests.swift; sourceTree = "<group>"; };
+		5AB17F2A2C719362005B616D /* DamodarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DamodarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AB17F2E2C719362005B616D /* DamodarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DamodarUITests.swift; sourceTree = "<group>"; };
+		5AB17F302C719362005B616D /* DamodarUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DamodarUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5AB17F412C71952A005B616D /* intro.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = intro.json; sourceTree = "<group>"; };
+		5AB17F462C719793005B616D /* JSONHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONHelper.swift; sourceTree = "<group>"; };
+		5AB17F4C2C71A047005B616D /* Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
+		5AB17F502C725A10005B616D /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		5AB17F532C726CD7005B616D /* MainTabbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabbar.swift; sourceTree = "<group>"; };
+		5AB17F552C72716D005B616D /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		5AB17F572C72718B005B616D /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		5AB17F5B2C727244005B616D /* ExperienceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceView.swift; sourceTree = "<group>"; };
+		5AB17F5D2C7272AC005B616D /* SizeConstangs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeConstangs.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5AB17F0D2C719361005B616D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AB17F1D2C719362005B616D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AB17F272C719362005B616D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5A25FE5A2C72733E0091BE38 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5A25FE592C72733E0091BE38 /* Intro.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5A25FE602C72733E0091BE38 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				5A25FE5A2C72733E0091BE38 /* Models */,
+				5A25FE5B2C72733E0091BE38 /* Home.swift */,
+				5A25FE5F2C72733E0091BE38 /* HomeViewModel.swift */,
+				5A25FE5C2C72733E0091BE38 /* HomeHeaderView.swift */,
+				5A25FE5D2C72733E0091BE38 /* HomeQuickView.swift */,
+				5A25FE5E2C72733E0091BE38 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		5A25FE672C7278C10091BE38 /* Experience */ = {
+			isa = PBXGroup;
+			children = (
+				5A25FE682C7278D00091BE38 /* Experience.swift */,
+				5A25FE6A2C7278DE0091BE38 /* ExperienceViewModel.swift */,
+				5AB17F5B2C727244005B616D /* ExperienceView.swift */,
+			);
+			path = Experience;
+			sourceTree = "<group>";
+		};
+		5A25FE6C2C7278F70091BE38 /* Education */ = {
+			isa = PBXGroup;
+			children = (
+				5A25FE6F2C727B300091BE38 /* Education.swift */,
+				5A25FE712C727B4A0091BE38 /* EducationViewModel.swift */,
+				5A25FE6D2C72790F0091BE38 /* EducationView.swift */,
+			);
+			path = Education;
+			sourceTree = "<group>";
+		};
+		5AB17F072C719361005B616D = {
+			isa = PBXGroup;
+			children = (
+				5AB17F122C719361005B616D /* Damodar */,
+				5AB17F232C719362005B616D /* DamodarTests */,
+				5AB17F2D2C719362005B616D /* DamodarUITests */,
+				5AB17F112C719361005B616D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5AB17F112C719361005B616D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5AB17F102C719361005B616D /* Damodar.app */,
+				5AB17F202C719362005B616D /* DamodarTests.xctest */,
+				5AB17F2A2C719362005B616D /* DamodarUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5AB17F122C719361005B616D /* Damodar */ = {
+			isa = PBXGroup;
+			children = (
+				5AB17F5F2C72730E005B616D /* Screens */,
+				5AB17F4B2C71A035005B616D /* Components */,
+				5AB17F452C719789005B616D /* Utils */,
+				5AB17F402C71950D005B616D /* Resources */,
+				5AB17F132C719361005B616D /* DamodarApp.swift */,
+				5AB17F172C719362005B616D /* Assets.xcassets */,
+				5AB17F192C719362005B616D /* Preview Content */,
+			);
+			path = Damodar;
+			sourceTree = "<group>";
+		};
+		5AB17F192C719362005B616D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5AB17F1A2C719362005B616D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5AB17F232C719362005B616D /* DamodarTests */ = {
+			isa = PBXGroup;
+			children = (
+				5AB17F242C719362005B616D /* DamodarTests.swift */,
+			);
+			path = DamodarTests;
+			sourceTree = "<group>";
+		};
+		5AB17F2D2C719362005B616D /* DamodarUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5AB17F2E2C719362005B616D /* DamodarUITests.swift */,
+				5AB17F302C719362005B616D /* DamodarUITestsLaunchTests.swift */,
+			);
+			path = DamodarUITests;
+			sourceTree = "<group>";
+		};
+		5AB17F402C71950D005B616D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5AB17F412C71952A005B616D /* intro.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5AB17F452C719789005B616D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5AB17F462C719793005B616D /* JSONHelper.swift */,
+				5AB17F572C72718B005B616D /* Errors.swift */,
+				5AB17F5D2C7272AC005B616D /* SizeConstangs.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		5AB17F4B2C71A035005B616D /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				5AB17F4C2C71A047005B616D /* Text.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		5AB17F522C726CA3005B616D /* TabView */ = {
+			isa = PBXGroup;
+			children = (
+				5AB17F502C725A10005B616D /* MainTabView.swift */,
+				5AB17F532C726CD7005B616D /* MainTabbar.swift */,
+				5AB17F552C72716D005B616D /* MainViewModel.swift */,
+			);
+			path = TabView;
+			sourceTree = "<group>";
+		};
+		5AB17F5F2C72730E005B616D /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				5A25FE6C2C7278F70091BE38 /* Education */,
+				5A25FE672C7278C10091BE38 /* Experience */,
+				5A25FE602C72733E0091BE38 /* Home */,
+				5AB17F522C726CA3005B616D /* TabView */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5AB17F0F2C719361005B616D /* Damodar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5AB17F342C719362005B616D /* Build configuration list for PBXNativeTarget "Damodar" */;
+			buildPhases = (
+				5AB17F0C2C719361005B616D /* Sources */,
+				5AB17F0D2C719361005B616D /* Frameworks */,
+				5AB17F0E2C719361005B616D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Damodar;
+			productName = Damodar;
+			productReference = 5AB17F102C719361005B616D /* Damodar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5AB17F1F2C719362005B616D /* DamodarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5AB17F372C719362005B616D /* Build configuration list for PBXNativeTarget "DamodarTests" */;
+			buildPhases = (
+				5AB17F1C2C719362005B616D /* Sources */,
+				5AB17F1D2C719362005B616D /* Frameworks */,
+				5AB17F1E2C719362005B616D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5AB17F222C719362005B616D /* PBXTargetDependency */,
+			);
+			name = DamodarTests;
+			productName = DamodarTests;
+			productReference = 5AB17F202C719362005B616D /* DamodarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5AB17F292C719362005B616D /* DamodarUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5AB17F3A2C719362005B616D /* Build configuration list for PBXNativeTarget "DamodarUITests" */;
+			buildPhases = (
+				5AB17F262C719362005B616D /* Sources */,
+				5AB17F272C719362005B616D /* Frameworks */,
+				5AB17F282C719362005B616D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5AB17F2C2C719362005B616D /* PBXTargetDependency */,
+			);
+			name = DamodarUITests;
+			productName = DamodarUITests;
+			productReference = 5AB17F2A2C719362005B616D /* DamodarUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5AB17F082C719361005B616D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					5AB17F0F2C719361005B616D = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					5AB17F1F2C719362005B616D = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 5AB17F0F2C719361005B616D;
+					};
+					5AB17F292C719362005B616D = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 5AB17F0F2C719361005B616D;
+					};
+				};
+			};
+			buildConfigurationList = 5AB17F0B2C719361005B616D /* Build configuration list for PBXProject "Damodar" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5AB17F072C719361005B616D;
+			productRefGroup = 5AB17F112C719361005B616D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5AB17F0F2C719361005B616D /* Damodar */,
+				5AB17F1F2C719362005B616D /* DamodarTests */,
+				5AB17F292C719362005B616D /* DamodarUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5AB17F0E2C719361005B616D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AB17F1B2C719362005B616D /* Preview Assets.xcassets in Resources */,
+				5AB17F182C719362005B616D /* Assets.xcassets in Resources */,
+				5AB17F422C71952A005B616D /* intro.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AB17F1E2C719362005B616D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AB17F282C719362005B616D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5AB17F0C2C719361005B616D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AB17F5E2C7272AC005B616D /* SizeConstangs.swift in Sources */,
+				5A25FE702C727B300091BE38 /* Education.swift in Sources */,
+				5AB17F542C726CD7005B616D /* MainTabbar.swift in Sources */,
+				5A25FE612C72733E0091BE38 /* Intro.swift in Sources */,
+				5A25FE692C7278D00091BE38 /* Experience.swift in Sources */,
+				5AB17F512C725A10005B616D /* MainTabView.swift in Sources */,
+				5A25FE622C72733E0091BE38 /* Home.swift in Sources */,
+				5AB17F582C72718B005B616D /* Errors.swift in Sources */,
+				5AB17F142C719361005B616D /* DamodarApp.swift in Sources */,
+				5A25FE642C72733E0091BE38 /* HomeQuickView.swift in Sources */,
+				5A25FE6E2C72790F0091BE38 /* EducationView.swift in Sources */,
+				5A25FE652C72733E0091BE38 /* HomeView.swift in Sources */,
+				5A25FE632C72733E0091BE38 /* HomeHeaderView.swift in Sources */,
+				5A25FE662C72733E0091BE38 /* HomeViewModel.swift in Sources */,
+				5AB17F472C719793005B616D /* JSONHelper.swift in Sources */,
+				5A25FE722C727B4A0091BE38 /* EducationViewModel.swift in Sources */,
+				5AB17F4D2C71A047005B616D /* Text.swift in Sources */,
+				5AB17F5C2C727244005B616D /* ExperienceView.swift in Sources */,
+				5A25FE6B2C7278DE0091BE38 /* ExperienceViewModel.swift in Sources */,
+				5AB17F562C72716D005B616D /* MainViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AB17F1C2C719362005B616D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AB17F252C719362005B616D /* DamodarTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AB17F262C719362005B616D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AB17F2F2C719362005B616D /* DamodarUITests.swift in Sources */,
+				5AB17F312C719362005B616D /* DamodarUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5AB17F222C719362005B616D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5AB17F0F2C719361005B616D /* Damodar */;
+			targetProxy = 5AB17F212C719362005B616D /* PBXContainerItemProxy */;
+		};
+		5AB17F2C2C719362005B616D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5AB17F0F2C719361005B616D /* Damodar */;
+			targetProxy = 5AB17F2B2C719362005B616D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5AB17F322C719362005B616D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5AB17F332C719362005B616D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5AB17F352C719362005B616D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Damodar/Preview Content\"";
+				DEVELOPMENT_TEAM = 6P8C5K6GS8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.Damodar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5AB17F362C719362005B616D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Damodar/Preview Content\"";
+				DEVELOPMENT_TEAM = 6P8C5K6GS8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.Damodar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5AB17F382C719362005B616D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6P8C5K6GS8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.DamodarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Damodar.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Damodar";
+			};
+			name = Debug;
+		};
+		5AB17F392C719362005B616D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6P8C5K6GS8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.DamodarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Damodar.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Damodar";
+			};
+			name = Release;
+		};
+		5AB17F3B2C719362005B616D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6P8C5K6GS8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.DamodarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Damodar;
+			};
+			name = Debug;
+		};
+		5AB17F3C2C719362005B616D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6P8C5K6GS8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.DamodarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Damodar;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5AB17F0B2C719361005B616D /* Build configuration list for PBXProject "Damodar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AB17F322C719362005B616D /* Debug */,
+				5AB17F332C719362005B616D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5AB17F342C719362005B616D /* Build configuration list for PBXNativeTarget "Damodar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AB17F352C719362005B616D /* Debug */,
+				5AB17F362C719362005B616D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5AB17F372C719362005B616D /* Build configuration list for PBXNativeTarget "DamodarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AB17F382C719362005B616D /* Debug */,
+				5AB17F392C719362005B616D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5AB17F3A2C719362005B616D /* Build configuration list for PBXNativeTarget "DamodarUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AB17F3B2C719362005B616D /* Debug */,
+				5AB17F3C2C719362005B616D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5AB17F082C719361005B616D /* Project object */;
+}
