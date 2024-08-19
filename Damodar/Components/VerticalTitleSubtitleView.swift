@@ -12,11 +12,11 @@ struct VerticalTitleSubtitleView: View {
     let text: String
     var body: some View {
         VStack(alignment: .center) {
-            TextHeadline(text: title)
+            TextSubheadline(text: title)
                 .padding(.bottom, 4)
             Text(text)
                 .font(.system(size: 12, weight: .light))
-        }.padding()
+        }
     }
 }
 

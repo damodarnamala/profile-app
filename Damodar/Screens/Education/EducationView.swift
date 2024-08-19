@@ -25,16 +25,30 @@ struct EducationView: View {
                 VStack(alignment: .leading) {
                     aboutMe.map { me in
                         VStack(alignment: .center) {
-                            ForEach(me.education.details, id: \.self) { item in
-                                Text(item)
-                                    .font(.system(size: 12, weight: .light))
-                                    .frame(maxWidth: .infinity, alignment: .leading)
-                                    .padding(.vertical, 1)
+                            Section(header: TextSubheadline(text: me.education.title)
+                                .frame(maxWidth: .infinity, alignment: .leading)) {
+                                ForEach(me.education.details, id: \.self) { item in
+                                    Text(item)
+                                        .font(.system(size: 12, weight: .light))
+                                        .frame(maxWidth: .infinity, alignment: .leading)
+                                        .padding(.vertical, 1)
+                                }
+                            }
+                            Spacer().frame(height: 34)
+                            Section(header: TextSubheadline(text: me.certifications.title)
+                                .frame(maxWidth: .infinity, alignment: .leading)) {
+                                ForEach(me.certifications.details, id: \.self) { item in
+                                    Text(item)
+                                        .font(.system(size: 12, weight: .light))
+                                        .frame(maxWidth: .infinity, alignment: .leading)
+                                        .padding(.vertical, 1)
+                                }
                             }
                         }
                         .navigationTitle(me.education.title )
                     }
                 }
+                .padding(.horizontal)
             }
             .frame(maxHeight: .infinity, alignment: .top)
             .padding()

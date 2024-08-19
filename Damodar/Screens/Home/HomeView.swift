@@ -36,7 +36,6 @@ struct HomeView: View {
                                 .padding(.horizontal)
                         }
                     }
-                    HomeQuickView()
                     qrCodeImage
                 }
             }

@@ -14,7 +14,6 @@ struct HomeQuickView: View {
             .frame(maxWidth: .infinity)
             .frame(height: 1)
             .foregroundStyle(.tertiary)
-            .padding(.horizontal)
         
         ScrollView(.horizontal) {
             HStack {
@@ -28,7 +27,6 @@ struct HomeQuickView: View {
             .frame(maxWidth: .infinity)
             .frame(height: 1)
             .foregroundStyle(.tertiary)
-            .padding(.horizontal)
     }
 }
 
