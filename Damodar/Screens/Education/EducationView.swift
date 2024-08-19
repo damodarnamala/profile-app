@@ -19,38 +19,22 @@ struct EducationView: View {
     var body: some View {
         NavigationView {
             VStack(alignment: .leading) {
-                Image(systemName: "graduationcap")
-                    .font(.system(size: 64))
-                    .padding(.bottom)
-                VStack(alignment: .leading) {
-                    aboutMe.map { me in
-                        VStack(alignment: .center) {
-                            Section(header: TextSubheadline(text: me.education.title)
-                                .frame(maxWidth: .infinity, alignment: .leading)) {
-                                ForEach(me.education.details, id: \.self) { item in
-                                    Text(item)
-                                        .font(.system(size: 12, weight: .light))
-                                        .frame(maxWidth: .infinity, alignment: .leading)
-                                        .padding(.vertical, 1)
-                                }
-                            }
-                            Spacer().frame(height: 34)
-                            Section(header: TextSubheadline(text: me.certifications.title)
-                                .frame(maxWidth: .infinity, alignment: .leading)) {
-                                ForEach(me.certifications.details, id: \.self) { item in
-                                    Text(item)
-                                        .font(.system(size: 12, weight: .light))
-                                        .frame(maxWidth: .infinity, alignment: .leading)
-                                        .padding(.vertical, 1)
-                                }
-                            }
-                        }
-                        .navigationTitle(me.education.title )
+                aboutMe.map { me in
+                    VStack {
+                        OtherDetailsView(image: "graduationcap",
+                                         subHeading: nil,
+                                         details: me.education.details)
+                        .padding(.vertical)
+                        
+                        OtherDetailsView(image: nil,
+                                         subHeading: me.certifications.title,
+                                         details: me.certifications.details)
+
                     }
+                    .navigationTitle(me.education.title)
                 }
-                .padding(.horizontal)
             }
-            .frame(maxHeight: .infinity, alignment: .top)
+            .frame(maxHeight: .infinity, alignment: .topLeading)
             .padding()
             .onAppear {
                 aboutMe = store.getInfo()

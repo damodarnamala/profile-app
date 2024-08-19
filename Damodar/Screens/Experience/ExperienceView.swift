@@ -19,30 +19,15 @@ struct ExperienceView: View {
     var body: some View {
         NavigationView {
             VStack(alignment: .leading) {
-                Image(systemName: "briefcase")
-                    .font(.system(size: 64))
-                    .padding(.bottom)
-                
-                VStack(alignment: .leading) {
-                    aboutMe.map { me in
-                        VStack(alignment: .center) {
-                            Section(header: TextSubheadline(text: me.experience.title)
-                                .frame(maxWidth: .infinity, alignment: .leading)) {
-                                    HomeQuickView()
-                                    ForEach(me.experience.details, id: \.self) { item in
-                                        Text(item)
-                                            .font(.system(size: 12, weight: .light))
-                                            .frame(maxWidth: .infinity, alignment: .leading)
-                                            .padding(.vertical, 1)
-                                    }
-                                }
-                        }
-                        .navigationTitle(me.experience.title )
-                    }
+                aboutMe.map { me in
+                    OtherDetailsView(image: "briefcase",
+                                     subHeading: nil,
+                                     details: me.experience.details)
+                    .navigationTitle(me.experience.title)
                 }
             }
-            .frame(maxHeight: .infinity, alignment: .top)
-            .padding(.horizontal)
+            .frame(maxHeight: .infinity, alignment: .topLeading)
+            .padding()
             .onAppear {
                 aboutMe = store.getInfo()
             }
@@ -53,3 +38,4 @@ struct ExperienceView: View {
 #Preview {
     ExperienceView(viewModel: .init())
 }
+

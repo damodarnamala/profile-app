@@ -22,6 +22,7 @@
 		5A25FE792C728E9F0091BE38 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A25FE782C728E9F0091BE38 /* DetailsView.swift */; };
 		5A25FE7B2C7311D60091BE38 /* AboutMeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A25FE7A2C7311D60091BE38 /* AboutMeModel.swift */; };
 		5A25FE7F2C7315080091BE38 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A25FE7E2C7315080091BE38 /* Store.swift */; };
+		5A25FE812C7326D20091BE38 /* OtherDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A25FE802C7326D20091BE38 /* OtherDetailsView.swift */; };
 		5AB17F142C719361005B616D /* DamodarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB17F132C719361005B616D /* DamodarApp.swift */; };
 		5AB17F182C719362005B616D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AB17F172C719362005B616D /* Assets.xcassets */; };
 		5AB17F1B2C719362005B616D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AB17F1A2C719362005B616D /* Preview Assets.xcassets */; };
@@ -72,6 +73,7 @@
 		5A25FE782C728E9F0091BE38 /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
 		5A25FE7A2C7311D60091BE38 /* AboutMeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMeModel.swift; sourceTree = "<group>"; };
 		5A25FE7E2C7315080091BE38 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		5A25FE802C7326D20091BE38 /* OtherDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherDetailsView.swift; sourceTree = "<group>"; };
 		5AB17F102C719361005B616D /* Damodar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Damodar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AB17F132C719361005B616D /* DamodarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DamodarApp.swift; sourceTree = "<group>"; };
 		5AB17F172C719362005B616D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -250,6 +252,7 @@
 				5AB17F4C2C71A047005B616D /* Text.swift */,
 				5A25FE732C72824D0091BE38 /* MessageBubble.swift */,
 				5A25FE752C7287020091BE38 /* VerticalTitleSubtitleView.swift */,
+				5A25FE802C7326D20091BE38 /* OtherDetailsView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -429,6 +432,7 @@
 				5A25FE722C727B4A0091BE38 /* EducationViewModel.swift in Sources */,
 				5AB17F4D2C71A047005B616D /* Text.swift in Sources */,
 				5AB17F5C2C727244005B616D /* ExperienceView.swift in Sources */,
+				5A25FE812C7326D20091BE38 /* OtherDetailsView.swift in Sources */,
 				5A25FE6B2C7278DE0091BE38 /* ExperienceViewModel.swift in Sources */,
 				5AB17F562C72716D005B616D /* MainViewModel.swift in Sources */,
 			);
