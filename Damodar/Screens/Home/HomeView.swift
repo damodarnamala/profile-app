@@ -8,8 +8,6 @@
 import SwiftUI
 import Combine
 
-
-
 @MainActor
 struct HomeView: View {
     var viewModel: HomeViewModel
@@ -33,7 +31,7 @@ struct HomeView: View {
                 ScrollView {
                     HStack {
                         MessageBubble(isIncoming: true) {
-                            TextCaption(text: aboutMe?.primaryInfo.name ?? "")
+                            TextCaption(text: aboutMe?.primaryInfo.aboutMe ?? "")
                                 .multilineTextAlignment(.center)
                                 .padding(.horizontal)
                         }
