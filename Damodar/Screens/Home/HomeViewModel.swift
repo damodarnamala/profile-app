@@ -10,13 +10,5 @@ import Combine
 
 @MainActor
 class HomeViewModel: ObservableObject {
-    private (set) var introSubject = PassthroughSubject<Intro?, Never>()
-    private var configuration = Home.Configuration()
-    func getIntro() {
-        guard let intro = try? self.configuration.useCase.getIntro()
-        else {
-            return
-        }
-        self.introSubject.send(intro)
-    }
+    private (set) var configuration = Home.Configuration()
 }

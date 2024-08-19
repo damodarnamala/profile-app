@@ -6,11 +6,14 @@
 //
 
 import Foundation
+import SwiftUI
 
 struct MainTabView {
+    @EnvironmentObject var store: Store
     var configuration = MainTabView.Configuration()
-    @MainActor func build() -> MainView {
+    @MainActor func build() -> some View {
         MainView(viewModel: .init(configuration: .init()))
+            .environmentObject(store)
     }
 }
 

@@ -6,9 +6,11 @@
 //
 
 import Foundation
+import SwiftUI
 
 struct Education {
-    @MainActor func build() -> EducationView {
-        EducationView(viewModel: .init())
+    @EnvironmentObject var store: Store
+    @MainActor static func build() -> some View {
+        return EducationView(viewModel: .init())
     }
 }

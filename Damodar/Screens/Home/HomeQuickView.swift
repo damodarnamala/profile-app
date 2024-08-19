@@ -18,9 +18,9 @@ struct HomeQuickView: View {
         
         ScrollView(.horizontal) {
             HStack {
-                TilesView(title: "iOS Experience", text: "12+ years")
-                TilesView(title: "Team Management", text: "6+ years")
-                TilesView(title: "Published", text: "20+ Apps in app-store")
+                VerticalTitleSubtitleView(title: "iOS Experience", text: "12+ years")
+                VerticalTitleSubtitleView(title: "Team Management", text: "6+ years")
+                VerticalTitleSubtitleView(title: "Published", text: "20+ Apps in app-store")
             }
         }
         .scrollIndicators(.hidden)

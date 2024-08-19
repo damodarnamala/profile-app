@@ -9,8 +9,9 @@ import SwiftUI
 
 struct ExperienceView: View {
     var viewModel: ExperienceViewModel
-    @State var intro: Intro?
-    
+    @State var aboutMe: AboutMeModel?
+    @EnvironmentObject var store: Store
+
     init(viewModel: ExperienceViewModel) {
         self.viewModel = viewModel
     }
@@ -18,37 +19,33 @@ struct ExperienceView: View {
     var body: some View {
         NavigationView {
             VStack(alignment: .leading) {
-                Image(systemName: "briefcase.fill")
+                Image(systemName: "briefcase")
                     .font(.system(size: 64))
                     .padding(.bottom)
                 
                 VStack(alignment: .leading) {
-                    intro.map { introItem in
+                    aboutMe.map { me in
                         VStack(alignment: .center) {
-                            ForEach(introItem.experience.all, id: \.self) { item in
+                            ForEach(me.experience.details, id: \.self) { item in
                                 Text(item)
                                     .font(.system(size: 12, weight: .light))
                                     .frame(maxWidth: .infinity, alignment: .leading)
                                     .padding(.vertical, 1)
                             }
                         }
-                        .navigationTitle(introItem.experience.title )
+                        .navigationTitle(me.experience.title )
                     }
                 }
             }
             .frame(maxHeight: .infinity, alignment: .top)
             .padding()
             .onAppear {
-                viewModel.getIntro()
-            }
-            .onReceive(viewModel.introSubject) { intro in
-                self.intro = intro
+                aboutMe = store.getInfo()
             }
         }
     }
 }
 
-
 #Preview {
-    ExperienceView(viewModel: .init(usecase: .init()))
+    ExperienceView(viewModel: .init())
 }

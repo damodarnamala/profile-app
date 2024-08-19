@@ -8,7 +8,7 @@
 import SwiftUI
 struct HomeHeaderView: View {
     let configuration = Home.Configuration()
-    let intro: Intro?
+    let aboutMe: AboutMeModel?
     
     var body: some View {
         VStack {
@@ -23,12 +23,13 @@ struct HomeHeaderView: View {
                         .frame(width: 110, height: 130)
                         .padding(.leading)
                     VStack(alignment: .leading) {
-                        intro.map { intro in
+                        aboutMe.map { intro in
                             VStack {
-                                TextSubheadline(text: intro.designation.capitalized)
-                                TextSubheadline(text: intro.companyName.capitalized)
+                                let info = aboutMe?.primaryInfo
+                                TextSubheadline(text: info?.designation.capitalized ?? "")
+                                TextSubheadline(text: info?.companyName.capitalized ?? "")
                                 VStack(alignment: .center) {
-                                    Text("\"A problem well stated is half solved.!!")
+                                    Text(info?.quote ?? "")
                                         .padding(.top)
                                         .font(.system(.caption))
                                         .foregroundStyle(.secondary)
@@ -39,10 +40,11 @@ struct HomeHeaderView: View {
                     .padding()
                 }
             }
+            .cornerRadius(4)
         }
     }
 }
 
 #Preview {
-    HomeHeaderView(intro: nil)
+    HomeHeaderView(aboutMe: nil)
 }

@@ -9,12 +9,11 @@ import SwiftUI
 
 
 struct Home {
-    @MainActor func build(configuration: Home.Configuration) -> HomeView {
-        HomeView(viewModel: .init())
+    @EnvironmentObject var store: Store
+    @MainActor static func build() -> some View {
+        return HomeView(viewModel: .init())
     }
 }
-
-
 extension Home {
     struct Configuration {
         var resources = Resources()
@@ -30,12 +29,13 @@ extension Home {
 extension Home.Configuration {
    
     struct Strings {
-        
+        var linkedInUrl = "https://www.linkedin.com/in/damodarnamala/"
     }
     
     struct Images {
         var hederTransperent = "home-header-transparent"
         var person = "person-image"
+        var qrCodeLinkedin = "qr-linkedin"
     }
     
     struct Router {
@@ -50,18 +50,17 @@ extension Home.Configuration {
 
 extension Home.Configuration {
     protocol IntroUseCase {
-        func getIntro() throws -> Intro
+        func getIntro() throws -> AboutMeModel
     }
     
     struct UseCase: IntroUseCase {
-        func getIntro() throws -> Intro {
-            guard let intro: Intro = JSONHelper.decode("intro", fileType: "json") else {
+        func getIntro() throws -> AboutMeModel {
+            guard let intro: AboutMeModel = JSONHelper.decode("intro", fileType: "json") else {
                 throw Errors.fileNotFound
             }
             return intro
         }
     }
-    
 }
 
 

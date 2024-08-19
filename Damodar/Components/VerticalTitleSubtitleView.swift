@@ -8,11 +8,18 @@
 import SwiftUI
 
 struct VerticalTitleSubtitleView: View {
+    let title: String
+    let text: String
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(alignment: .center) {
+            TextHeadline(text: title)
+                .padding(.bottom, 4)
+            Text(text)
+                .font(.system(size: 12, weight: .light))
+        }.padding()
     }
 }
 
 #Preview {
-    VerticalTitleSubtitleView()
+    VerticalTitleSubtitleView(title: "Name", text: "Damodar")
 }

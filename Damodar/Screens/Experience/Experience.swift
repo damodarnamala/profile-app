@@ -6,9 +6,12 @@
 //
 
 import Foundation
+import SwiftUI
+
 struct Experience {
-    @MainActor func build() -> ExperienceView {
-        ExperienceView(viewModel: .init(usecase: .init()))
+    @EnvironmentObject var store: Store
+    @MainActor static func build() -> ExperienceView {
+        return ExperienceView(viewModel: .init())
     }
 }
 

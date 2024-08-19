@@ -9,8 +9,9 @@ import SwiftUI
 
 struct EducationView: View {
     var viewModel: EducationViewModel
-    @State var intro: Intro?
-    
+    @State var aboutMe: AboutMeModel?
+    @EnvironmentObject var store: Store
+
     init(viewModel: EducationViewModel) {
         self.viewModel = viewModel
     }
@@ -22,31 +23,28 @@ struct EducationView: View {
                     .font(.system(size: 64))
                     .padding(.bottom)
                 VStack(alignment: .leading) {
-                    intro.map { introItem in
+                    aboutMe.map { me in
                         VStack(alignment: .center) {
-                            ForEach(introItem.education.all, id: \.self) { item in
+                            ForEach(me.education.details, id: \.self) { item in
                                 Text(item)
                                     .font(.system(size: 12, weight: .light))
                                     .frame(maxWidth: .infinity, alignment: .leading)
                                     .padding(.vertical, 1)
                             }
                         }
-                        .navigationTitle(introItem.education.title )
+                        .navigationTitle(me.education.title )
                     }
                 }
             }
             .frame(maxHeight: .infinity, alignment: .top)
             .padding()
             .onAppear {
-                viewModel.getIntro()
-            }
-            .onReceive(viewModel.introSubject) { intro in
-                self.intro = intro
+                aboutMe = store.getInfo()
             }
         }
     }
 }
 
 #Preview {
-    Education().build()
+    Education.build()
 }

@@ -1,28 +1,65 @@
 {
-    "name": "Damodar Namala",
-    "designation": "Engineering Manager",
-    "companyName": "Hexaware Technologies",
-    "location": "Hyderabad",
-    "country": "India",
-    "aboutMe": "IOS Development Expert & Manager, \n leading teams to deliver top-notch iOS apps with expertise in cutting-edge technologies, and driving innovation and excellence in mobile development.",
-    "email": "damodar.namala@outlook.com",
-    "mobile": "+91 8050153110",
+    "primaryInfo": {
+        "name": "Damodar Namala",
+        "designation": "Engineering Manager",
+        "companyName": "Hexaware Technologies",
+        "location": "Hyderabad",
+        "country": "India",
+        "aboutMe": "iOS Development Expert & Manager, leading teams to deliver top-notch iOS apps with expertise in cutting-edge technologies, driving innovation and excellence in mobile development.",
+        "quote": "A problem well stated is half solved!!"
+    },
+    "contact": {
+        "email": "damodar.namala@outlook.com",
+        "mobile": "+91 8050153110"
+    },
     "education": {
         "title": "Education",
-        "all": [
-            " • Master of Computer Applications (MCA) JNTU(H).",
-            " • Foundations of Project Management - Google.",
-            " • LangChain- Develop LLM - Udemy.",
-            " • ChatGPT Complete Guide - Udemy."
+        "details": [
+            "Master of Computer Applications (MCA) - JNTU(H)"
+        ]
+    },
+    "certifications": {
+        "title": "Certifications",
+        "snapshot": [],
+        "details": [
+            "Foundations of Project Management - Google",
+            "LangChain - Develop LLM - Udemy",
+            "ChatGPT Complete Guide - Udemy"
         ]
     },
     "experience": {
         "title": "Experience",
-        "all": [
-            " • SwiftUI, Swift, Objective-C, Mac OS, iOS.",
-            " • Jira, Agile, Scrum.",
-            " • Jenkins, Github  Actions, Bitrise.",
-            " • Figma, Sketch, Keynote."
+        "snapshot": [
+            {
+                "title": "Architectures",
+                "details": "Excellent knowledge in app architectures MVVM, MVC, and others."
+            },
+            {
+                "title": "Functional & Design Principles",
+                "details": "Strong expertise in functional programming, SOLID principles, and design patterns."
+            },
+            {
+                "title": "Work Experience",
+                "details": "12+ years in iOS development."
+            },
+            {
+                "title": "Team Management",
+                "details": "7 years of experience in team management."
+            },
+            {
+                "title": "Projects",
+                "details": "Published 20 apps in the App Store."
+            },
+            {
+                "title": "CI/CD",
+                "details": "Hands-on experience in CI/CD."
+            }
+        ],
+        "details": [
+            "SwiftUI, Swift, Objective-C, Mac OS, iOS",
+            "Jira, Agile, Scrum",
+            "Jenkins, GitHub Actions, Bitrise",
+            "Figma, Sketch, Keynote"
         ]
     }
 }
