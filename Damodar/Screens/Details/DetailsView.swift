@@ -9,10 +9,15 @@ import SwiftUI
 
 
 struct DetailsView: View {
+
     var body: some View {
         NavigationView {
             VStack(alignment: .leading) {
                 HStack(spacing: 8) {
+                    Text("Damodar ")
+                        .font(.title)
+                        .fontWeight(.heavy)
+                        .foregroundStyle(.cardBackground)
                     GestureIconView(name: "house.fill") {
                         
                     }

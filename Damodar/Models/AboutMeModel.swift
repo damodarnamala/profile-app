@@ -22,7 +22,7 @@ struct CertificationsModel: Decodable {
 }
 
 // MARK: - Snapshot
-struct SnapshotModel: Decodable {
+struct SnapshotModel: Decodable, Hashable {
     let title, details: String
 }
 

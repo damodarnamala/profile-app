@@ -36,7 +36,9 @@ struct HomeView: View {
                                 .padding(.horizontal)
                         }
                     }
+                    
                     qrCodeImage
+
                 }
             }
             .navigationTitle(aboutMe?.primaryInfo.name ?? "")

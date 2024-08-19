@@ -12,7 +12,7 @@ struct OtherDetailsView: View {
     let image: String?
     let subHeading: String?
     let details: [String]
-
+    
     var body: some View {
         VStack(alignment: .leading) {
             VStack(alignment: .leading, spacing: 8) {
@@ -22,7 +22,10 @@ struct OtherDetailsView: View {
                         .padding(.bottom)
                 }
                 subHeading.map { text in
-                    TextSubheadline(text: text)
+                    Text(text)
+                        .font(.system(size: 12, weight: .bold))
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .padding(.vertical, 1)
                         .padding(.horizontal)
                 }
                 ForEach(details, id: \.self) { item in
@@ -36,3 +39,27 @@ struct OtherDetailsView: View {
         }
     }
 }
+struct SnapshotView: View {
+    let snapshots: [SnapshotModel]
+    var body: some View {
+        VStack {
+            ForEach(snapshots, id: \.self) { model in
+                VStack {
+                    Text(model.title)
+                        .font(.system(size: 12, weight: .bold))
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .padding(.vertical, 1)
+                        .padding(.horizontal)
+                    Text(model.details)
+                        .font(.system(size: 12, weight: .light))
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .padding(.leading)
+                        .padding(.vertical, 1)
+                }
+                .padding(.vertical, 8)
+            }
+        }
+    }
+}
+
+

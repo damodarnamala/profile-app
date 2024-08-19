@@ -20,9 +20,15 @@ struct ExperienceView: View {
         NavigationView {
             VStack(alignment: .leading) {
                 aboutMe.map { me in
-                    OtherDetailsView(image: "briefcase",
-                                     subHeading: nil,
-                                     details: me.experience.details)
+                    VStack {
+                        OtherDetailsView(image: "briefcase",
+                                         subHeading: nil,
+                                         details: me.experience.details)
+                        .padding(.bottom)
+                        ScrollView {
+                            SnapshotView(snapshots: me.experience.snapshot)
+                        }
+                    }
                     .navigationTitle(me.experience.title)
                 }
             }
